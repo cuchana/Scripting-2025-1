@@ -114,6 +114,7 @@
 
             }
 
+            Console.WriteLine( "Ejercicio #3: Convertir segundos");
             int segundos = 3665;
             string resultado = ConvertirSegundos(segundos);
             Console.WriteLine("Resultado " + resultado);
@@ -129,14 +130,15 @@
         }
 
 
+            Console.WriteLine( "Ejercicio #4: Mensaje alterado");
 
-        AbstractSample simple = new SimplePrinter("Hola Mundo");
+            AbstractSample simple = new ImpresoraSencilla("Hola Profe");
         simple.PrintMessage();
         simple.InvertMessage();
 
         Console.WriteLine();
 
-        AbstractSample fancy = new FancyPrinter("Hola Mundo");
+        AbstractSample fancy = new ImpresoraCombo("Hola clase");
         fancy.PrintMessage();
         fancy.InvertMessage();
             }

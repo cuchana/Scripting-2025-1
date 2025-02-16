@@ -3,9 +3,9 @@ using System;
 using System.Linq;
 namespace scripting_ejercicios_diagnosticos
 {
-    class FancyPrinter : AbstractSample
+    class ImpresoraCombo : AbstractSample
     {
-        public FancyPrinter(string message) : base(message) { }
+        public ImpresoraCombo(string message) : base(message) { }
 
         public override void PrintMessage()
         {
@@ -18,7 +18,7 @@ namespace scripting_ejercicios_diagnosticos
         public override void InvertMessage()
         {
             string reversedMessage = new string(GetMessage().Reverse().ToArray());
-            Console.WriteLine($"Mensaje invertido (Fancy): {reversedMessage}");
+            Console.WriteLine($"Mensaje invertido : {reversedMessage}");
         }
     }
 }
